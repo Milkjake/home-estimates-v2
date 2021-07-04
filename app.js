@@ -6,7 +6,7 @@ const fastcsv = require("fast-csv");
 const cliProgress = require("cli-progress");
 
 const ADDRESS_URI = "https://www.homes.co.nz/address";
-const CONCURRENCY = 10;
+const CONCURRENCY = 20;
 
 const args = process.argv.slice(2);
 
