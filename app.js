@@ -97,8 +97,6 @@ const args = process.argv.slice(2);
                       },
                     } = cards[0];
 
-                    bar.increment();
-
                     return {
                       full_address: address,
                       estimate_date: new Date(date).toLocaleDateString(),
@@ -115,6 +113,8 @@ const args = process.argv.slice(2);
               }
             } catch (err) {
               throw err;
+            } finally {
+              bar.increment();
             }
 
             return null;
