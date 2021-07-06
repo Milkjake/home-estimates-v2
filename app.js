@@ -147,6 +147,7 @@ const args = process.argv.slice(2);
         if (!fs.existsSync(`csv/${suburbToQuery}`)) {
           fs.mkdirSync(`csv/${suburbToQuery}`);
         }
+
         writeCsv(suburbToQuery, suburbToQuery, suburbData);
 
         console.log(`Total elapsed time: ${msToTime(Date.now() - start)}`);
